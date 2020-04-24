@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
         html{
             font-size: 10px;
         }
     </style>
+
    <div id="page-wrapper">
     <header id="header">
       <div class="logo">
@@ -21,8 +23,11 @@
         </ul>
       </nav>
     </header>
+
 <body>
+
 <h1>Fresh Baked to Your Doorstep!</h1>
+
 <section id="intro-video">
     <iframe id="video"
     height="315"
@@ -30,5 +35,60 @@
     allowfullscreen>
 </iframe>
 </section>
+
+<section id="cookie-quiz">
+    <h3> Find Your Perfect Cookie Match!</h3>
+    <form>
+        <div class= "cookie-quiz">
+            <p>How do you feel about chocolate?</p>
+            <label for="love">
+                <input id="love" value="love" type="radio" name="chocolate">You have chocolate? GIVE IT TO ME NOW!!
+            </label>
+            <label for="like">
+                <input id="like" value="like" type="radio" name="chocolate">It's a good addition to most things.
+            </label>
+            <label for="meh">
+                <input id="meh" value="meh" type="radio" name="chocolate">Unpopular opinion, but meh...
+            </label>
+        </div>
+
+        <div class="cookie-quiz">
+            <p>Do you like fruit or nuts in your cookies?</p>
+            <label for="yes">
+                <input id="yes" value="yes" type="radio" name="fruit-nuts">Heck yes! Get all that goodstuff in there.
+            </label>
+                <label for="no-fruit">
+                    <input id="no-fruit" value="no-fruit" type="radio" name="fruit-nuts">Fruit? In a cookie? Blastphemy!
+                </label>
+                    <label for="yes-nuts">
+                        <input id="yes-nuts" value="yes-nuts" type="radio" name="fruit-nuts">I can get down with a pecan.
+                    </label>
+                    <label for="nope">
+                        <input id="nope" value="nope" type="radio" name="fruit-nuts">None of that healthy stuff!
+                    </label>
+        </div>
+
+        <div class="cookie-quiz">
+        <p>How about spices like cinnamon and nutmeg?</p>
+        <label for="yes">
+            <input id="yes" value="yes" type="radio" name="spices">Mmm, spice up my life!
+        </label>
+        <label for="no">
+            <input id="no" value="no" type="radio" name="spices">Naw, keep it simple. Sugar is my queen.
+        </label>
+        </div>
+
+        <div class="cookie-quiz">
+            <p>Last one!</p>
+            <label for="soft">
+                <input id="soft" value="soft" type="radio" name="final">Soft and chewy
+            </label>
+            <label for="fluffy">
+                <input id="fluffy" value="fluffy" type="radio" name="final">Light and fluffy
+            </label>
+        </div>
+    </form>
+</section>
+
 </body>
 </html>
