@@ -18,7 +18,7 @@
     <div id="page-wrapper">
       <header id="header">
             <div class="logo">
-                <img src="logo.jpg" id="logo" alt="Breez Cookiez logo">
+                <img src="logo.jpg" id="header-img" alt="Breez Cookiez logo">
             </div>
             <nav id="nav-bar">
                 <ul>
@@ -33,7 +33,7 @@
 
             <h1>Fresh Baked to Your Doorstep!</h1>
 
-            <section id="intro-video">
+            <section id="video">
     <iframe id="video"
     height="315"
     src="https://youtube.com/embed/3vUtRRZG0xY"
@@ -43,7 +43,7 @@
 
             <section id="cookie-quiz">
              <h3> Find Your Perfect Cookie Match!</h3>
-             <form>
+             <form id="form">
              <div class= "cookie-quiz">
                 <p><b>How do you feel about chocolate?</b></p>
               <label for="love">
@@ -93,7 +93,12 @@
                 <input id="fluffy" value="fluffy" type="radio" name="final">Light and fluffy
               </label>
              </div><br>
-             <button type="submit">Find my cookie</button>
+             <label for="email" id="email-sub">Enter your email to discover your perfect cookie match!</label>
+             <br>
+             <input type="email" 
+             id="email" 
+             placeholder="your email here"> 
+             <button type="submit">Find my Cookie!</button>
                 </form>
             </section><br>
 
