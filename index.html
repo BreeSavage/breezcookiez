@@ -14,141 +14,152 @@
     </style>
 
     <title>Breez Cookiez</title>
+</head>
+    <div id="page-wrapper">
+      <header id="header">
+            <div class="logo">
+                <img src="logo.jpg" id="logo" alt="Breez Cookiez logo">
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a class="nav-link" href="#subscription-options">Subscription Options</a></li>
+                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+        <body>
 
-   <div id="page-wrapper">
-    <header id="header">
-      <div class="logo">
-          <img src="logo.jpg" id="logo" alt="Breez Cookiez logo">
-      </div>
-      <nav id="nav-bar">
-        <ul>
-          <li><a class="nav-link" href="#subscription-options">Subscription Options</a></li>
-          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-          <li><a class="nav-link" href="#pricing">Pricing</a></li>
-        </ul>
-      </nav>
-    </header>
+            <h1>Fresh Baked to Your Doorstep!</h1>
 
-<body>
-
-<h1>Fresh Baked to Your Doorstep!</h1>
-
-<section id="intro-video">
+            <section id="intro-video">
     <iframe id="video"
     height="315"
     src="https://youtube.com/embed/3vUtRRZG0xY"
     allowfullscreen>
 </iframe>
-</section>
+            </section>
 
-<section id="cookie-quiz">
-    <h3> Find Your Perfect Cookie Match!</h3>
-    <form>
-        <div class= "cookie-quiz">
-            <p><b>How do you feel about chocolate?</b></p>
-            <label for="love">
+            <section id="cookie-quiz">
+             <h3> Find Your Perfect Cookie Match!</h3>
+             <form>
+             <div class= "cookie-quiz">
+                <p><b>How do you feel about chocolate?</b></p>
+              <label for="love">
                 <input id="love" value="love" type="radio" name="chocolate">You have chocolate? GIVE IT TO ME NOW!!
-            </label>
-            <label for="like">
+              </label>
+              <label for="like">
                 <input id="like" value="like" type="radio" name="chocolate">It's a good addition to most things.
-            </label>
-            <label for="meh">
+             </label>
+             <label for="meh">
                 <input id="meh" value="meh" type="radio" name="chocolate">Unpopular opinion, but meh...
-            </label>
-        </div>
+             </label>
+             </div>
 
-        <div class="cookie-quiz">
-            <p><b>Do you like fruit or nuts in your cookies?</b></p>
-            <label for="yes">
-                <input id="yes" value="yes" type="radio" name="fruit-nuts">Heck yes! Get all that goodstuff in there.
-            </label>
-                <label for="no-fruit">
-                    <input id="no-fruit" value="no-fruit" type="radio" name="fruit-nuts">Fruit? In a cookie? Blastphemy!
+              <div class="cookie-quiz">
+             <p><b>Do you like fruit or nuts in your cookies?</b></p>
+             <label for="yes">
+              <input id="yes" value="yes" type="radio" name="fruit-nuts">Heck yes! Get all that goodstuff in there.
                 </label>
-                    <label for="yes-nuts">
-                        <input id="yes-nuts" value="yes-nuts" type="radio" name="fruit-nuts">I can get down with a pecan.
-                    </label>
-                    <label for="nope">
-                        <input id="nope" value="nope" type="radio" name="fruit-nuts">None of that healthy stuff!
-                    </label>
-        </div>
+             <label for="no-fruit">
+              <input id="no-fruit" value="no-fruit" type="radio" name="fruit-nuts">Fruit? In a cookie? Blastphemy!
+                </label>
+             <label for="yes-nuts">
+             <input id="yes-nuts" value="yes-nuts" type="radio" name="fruit-nuts">I can get down with a pecan.
+              </label>
+             <label for="nope">
+              <input id="nope" value="nope" type="radio" name="fruit-nuts">None of that healthy stuff!
+              </label>
+                </div>
 
-        <div class="cookie-quiz">
-        <p><b>How about spices like cinnamon and nutmeg?</b></p>
-        <label for="yes">
-            <input id="yes" value="yes" type="radio" name="spices">Mmm, spice up my life!
-        </label>
-        <label for="no">
-            <input id="no" value="no" type="radio" name="spices">Naw, keep it simple. Sugar is my queen.
-        </label>
-        </div>
+             <div class="cookie-quiz">
+              <p><b>How about spices like cinnamon and nutmeg?</b></p>
+             <label for="yes">
+              <input id="yes" value="yes" type="radio" name="spices">Mmm, spice up my life!
+             </label>
+             <label for="no">
+             <input id="no" value="no" type="radio" name="spices">Naw, keep it simple. Sugar is my queen.
+             </label>
+             </div>
 
-        <div class="cookie-quiz">
-            <p><b>Last one!</b></p>
-            <label for="soft">
+             <div class="cookie-quiz">
+             <p><b>Last one!</b></p>
+              <label for="soft">
                 <input id="soft" value="soft" type="radio" name="final">Soft and chewy
-            </label>
-            <p> or </p>
-            <label for="fluffy">
+              </label>
+              <p> or </p>
+              <label for="fluffy">
                 <input id="fluffy" value="fluffy" type="radio" name="final">Light and fluffy
-            </label>
-        </div><br>
-        <button type="submit">Find my cookie</button>
-    </form>
-</section><br>
+              </label>
+             </div><br>
+             <button type="submit">Find my cookie</button>
+                </form>
+            </section><br>
 
-<section id="how-it-works">
-<h3><u>How it Works</u></h3>
-<p>Here at Breez Cookiez we know two things:
-    1. How to make good cookies
-    2. Everyone loves fresh cookies
-    Our goal is to provide you with a wide selection of cookies baked fresh
-    and delivered to your door. We always bake your cookies the <em>same day they are delivered</em>. In
-    order to get you the freshest cookies, we ask that you book your delivery slot at least
-    five days in advance. We believe that variety is the spice of life, so you 
-    get to choose exactly what kind of cookie you want every time. <br>
-    We know the best cookies are the ones that are still warm straight from the oven,
-    so we include uniqe instructions for each type of cookie so that you can warm your cookies at home. 
-    We accept one time orders, but if you love cookies as much as we do, then you 
-    will want to sign up for one of our Cookie Club subscriptions! As a part of the Cookie Club,
-    you will get exclusive offers on our newest cookie creations and many special 
-    discounts. Take a look at our Cookie Club options to see which one is right for you!
-</p>
-</section>
+            <section id="how-it-works">
+              <h3><u>How it Works</u></h3>
+              <p>Here at Breez Cookiez we know two things:
+                1. How to make good cookies
+                2. Everyone loves fresh cookies
+                Our goal is to provide you with a wide selection of cookies baked fresh
+                and delivered to your door. We always bake your cookies the <em>same day they are delivered</em>. In
+                order to get you the freshest cookies, we ask that you book your delivery slot at least
+                five days in advance. We believe that variety is the spice of life, so you 
+                get to choose exactly what kind of cookie you want every time. <br>
+                We know the best cookies are the ones that are still warm straight from the oven,
+                so we include uniqe instructions for each type of cookie so that you can warm your cookies at home. 
+                We accept one time orders, but if you love cookies as much as we do, then you 
+                will want to sign up for one of our Cookie Club subscriptions! As a part of the Cookie Club,
+                you will get exclusive offers on our newest cookie creations and many special 
+                discounts. Take a look at our Cookie Club options to see which one is right for you!
+                </p>
+            </section>
 
-<section id="subscription-options">
-    <h3>Cookie Club Subscription Options</h3>
-    <div class="cookie-club" id="seasonal">
-        <div class="level">Seasonal Cookie Craver</div>
-        <h4>$120/$200 per year</h4>
-        <p>
-            As a Seasonal Cookie Craver you will recieve an order of 
-            one or two dozen cookies every three months. Select our special seasonal
-            cookie like our pumpkin spice snickerdoodles in fall, or stick
-            to your favourites available year round.
-        </p>
-        <button class="btn">Select</button>
+            <section id="subscription-options">
+                <h3>Cookie Club Subscription Options</h3>
+                <div class="cookie-club" id="seasonal">
+                    <div class="level">Seasonal Cookie Craver</div>
+                    <h4>$120/$200 per year</h4>
+                    <p>
+                    As a Seasonal Cookie Craver you will recieve an order of 
+                    one or two dozen cookies every three months. Select our special seasonal
+                    cookie like our pumpkin spice snickerdoodles in fall, or stick
+                    to your favourites available year round.
+                    </p>
+                    <button class="btn">Select</button>
+                </div>
+
+                <div class="cookie-club" id="Connoisseur">
+                    <div class="level">Cookie Connoisseur</div>
+                    <h4>
+                    <ul>
+                        <li>$30/month for 6 months</li>
+                        <li>$25/month for 1 year</li>
+                        <li>$50/month for 6 months</li>
+                        <li>$42/month for 1 year</li>
+                    </ul>
+                    </h4>
+                    <p>
+                        As one of our Cookie Connoisseurs you will recieve a monthly order
+                        of one or two dozen cookies right to your doorstep. This is our most 
+                        popular option and you will see why when you see all of the delicous
+                        cookie options we share with our Cookie Club members. 
+                    </p>
+                    <button class="btn">Select</button>
+                </div>
+            </section>  
+
+            <footer>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+             <span>Copyright 2016, Original Trombones</span>
+            </footer>
     </div>
+        </body>
 
-    <div class="cookie-club" id="Connoisseur">
-    <div class="level">Cookie Connoisseur</div>
-        <h4>
-            <ul>
-                <li>$30/month for 6 months</li>
-                <li>$25/month for 1 year</li>
-                <li>$50/month for 6 months</li>
-                <li>$42/month for 1 year</li>
-            </ul>
-        </h4>
-        <p>
-            As one of our Cookie Connoisseurs you will recieve a monthly order
-            of one or two dozen cookies right to your doorstep. This is our most 
-            popular option and you will see why when you see all of the delicous
-            cookie options we share with our Cookie Club members. 
-        </p>
-        <button class="btn">Select</button>
-    </div>
-</section>
-
-</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
