@@ -3,14 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
     <style>
         html{
             font-size: 10px;
         }
+
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-size: 1.6rem;
+            font-family: 'Montserrat', sans-serif;
+            background-color: lavenderblush;
         }
+
+        #page-wrapper {
+            position: relative;
+        }
+
+        #footer-li, #header-li {
+            list-style: none;
+        }
+
+        .btn {
+            padding: 0 40px;
+            height: 40px;
+            font-size: 1.8em;
+            font-weight: 900;
+            border: 2px black solid;
+            border-radius: 4px;
+            background: transparent;
+            cursor: pointer;
+            font-family: 'Yanone Kaffeesatz', sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            min-height: 75px;
+            padding: 0px 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:rgb(151, 87, 109);
+        }
+
+        .container {
+            
+            width: 100%;
+            margin: 0 auto;
+        }
+
+
     </style>
 
     <title>Breez Cookiez</title>
@@ -21,7 +71,7 @@
                 <img src="logo.jpg" id="header-img" alt="Breez Cookiez logo">
             </div>
             <nav id="nav-bar">
-                <ul>
+                <ul id="header-li">
                     <li><a class="nav-link" href="#subscription-options">Subscription Options</a></li>
                     <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
                     <li><a class="nav-link" href="#pricing">Pricing</a></li>
@@ -29,16 +79,18 @@
             </nav>
         </header>
     
+        <div class="container"></div>
+
         <body>
 
             <h1>Fresh Baked to Your Doorstep!</h1>
 
             <section id="video">
-    <iframe id="video"
-    height="315"
-    src="https://youtube.com/embed/3vUtRRZG0xY"
-    allowfullscreen>
-</iframe>
+             <iframe id="video"
+                    height="315"
+                    src="https://youtube.com/embed/3vUtRRZG0xY"
+                    allowfullscreen>
+                </iframe>
             </section>
 
             <section id="cookie-quiz">
@@ -94,11 +146,10 @@
               </label>
              </div><br>
              <label for="email" id="email-sub">Enter your email to discover your perfect cookie match!</label>
-             <br>
              <input type="email" 
              id="email" 
              placeholder="your email here"
-             required> 
+             required> <br>
              <input type="submit" id="submit" value="Find my Cookie!" class="btn">
                 </form>
             </section><br>
@@ -157,7 +208,7 @@
             </section>  
 
             <footer>
-                <ul>
+                <ul id="footer-li">
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms</a></li>
                     <li><a href="#">Contact</a></li>
