@@ -43,7 +43,7 @@
             font-family: 'Yanone Kaffeesatz', sans-serif;
         }
 
-        header {
+        .header {
             position: fixed;
             top: 0px;
             min-height: 75px;
@@ -56,8 +56,22 @@
             background-color:rgb(151, 87, 109);
         }
 
-        .nav-link {
+
+        .header a {
+            float:left;
+            text-align: right;
+            padding: 12px;
             color: white;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a:hover {
+            color:pink;
+        }
+
+        .header-right {
+            float: right;
         }
 
         .container {
@@ -71,18 +85,13 @@
     <title>Breez Cookiez</title>
 </head>
     <div id="page-wrapper">
-      <header id="header">
-            <div class="logo">
-                <img src="logo.jpg" id="header-img" alt="Breez Cookiez logo">
-            </div>
-            <nav id="nav-bar">
-                <ul id="header-li">
-                    <li><a class="nav-link" href="#subscription-options">Subscription Options</a></li>
-                    <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-                    <li><a class="nav-link" href="#pricing">Pricing</a></li>
-                </ul>
-            </nav>
-        </header>
+            <div class="header">
+                <img src="logo.jpg" class="logo" alt="Breez Cookiez logo">
+                <div class="header-right">
+                    <a class="active" href="#subscription-options">Subscription Options</a>
+                    <a href="#how-it-works">How it Works</a>
+                </div>
+            </div>    
     
 
         <div class="container">
