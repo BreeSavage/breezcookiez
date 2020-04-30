@@ -85,14 +85,34 @@
             padding-top: 80px;
         }
 
-        .container {
-            position:relative;
-            top: 20px;
-        }
-
         #video {
             display: block;
             margin: auto;
+        }
+
+        #quiz-header {
+            padding-left: 10px;
+        }
+
+        .cookie-quiz {
+            display: block;
+            margin: 20px 50px;
+        } 
+
+        .chocolate {
+            display: block;
+        }
+
+        .fruit-nuts {
+            display: block;
+        }
+
+        .spices {
+            display: block;
+        }
+
+        .final {
+            display: block;
         }
 
         #how-it-works {
@@ -134,7 +154,7 @@
 
         <div class="container">
 
-            <h1 id=>Fresh Baked to Your Doorstep!</h1> <br>
+            <h1>Fresh Baked to Your Doorstep!</h1> <br>
 
             <section id="video">
              <iframe id="video"
@@ -146,63 +166,64 @@
             </section> <br>
 
             <section id="cookie-quiz">
-             <h3> Find Your Perfect Cookie Match!</h3>
+             <h3 id="quiz-header"> Find Your Perfect Cookie Match!</h3>
              <form id="form" action="https://www.freecodecamp.com/email-submit">
              <div class= "cookie-quiz">
                 <p><b>How do you feel about chocolate?</b></p>
-              <label for="love">
+              <label for="love" class="chocolate">
                 <input id="love" value="love" type="radio" name="chocolate">You have chocolate? GIVE IT TO ME NOW!!
               </label>
-              <label for="like">
+              <label for="like" class="chocolate">
                 <input id="like" value="like" type="radio" name="chocolate">It's a good addition to most things.
              </label>
-             <label for="meh">
+             <label for="meh" class="chocolate">
                 <input id="meh" value="meh" type="radio" name="chocolate">Unpopular opinion, but meh...
              </label>
              </div>
 
               <div class="cookie-quiz">
              <p><b>Do you like fruit or nuts in your cookies?</b></p>
-             <label for="yes">
+             <label for="yes" class="fruit-nuts">
               <input id="yes" value="yes" type="radio" name="fruit-nuts">Heck yes! Get all that goodstuff in there.
                 </label>
-             <label for="no-fruit">
+             <label for="no-fruit" class="fruit-nuts">
               <input id="no-fruit" value="no-fruit" type="radio" name="fruit-nuts">Fruit? In a cookie? Blastphemy!
                 </label>
-             <label for="yes-nuts">
+             <label for="yes-nuts" class="fruit-nuts">
              <input id="yes-nuts" value="yes-nuts" type="radio" name="fruit-nuts">I can get down with a pecan.
               </label>
-             <label for="nope">
+             <label for="nope" class="fruit-nuts">
               <input id="nope" value="nope" type="radio" name="fruit-nuts">None of that healthy stuff!
               </label>
                 </div>
 
              <div class="cookie-quiz">
               <p><b>How about spices like cinnamon and nutmeg?</b></p>
-             <label for="yes">
+             <label for="yes" class="spices">
               <input id="yes" value="yes" type="radio" name="spices">Mmm, spice up my life!
              </label>
-             <label for="no">
+             <label for="no" class="spices">
              <input id="no" value="no" type="radio" name="spices">Naw, keep it simple. Sugar is my queen.
              </label>
              </div>
 
              <div class="cookie-quiz">
              <p><b>Last one!</b></p>
-              <label for="soft">
+              <label for="soft" class="final">
                 <input id="soft" value="soft" type="radio" name="final">Soft and chewy
               </label>
               <p> or </p>
-              <label for="fluffy">
+              <label for="fluffy" class="final">
                 <input id="fluffy" value="fluffy" type="radio" name="final">Light and fluffy
-              </label>
-             </div><br>
+              </label><br>
+             
              <label for="email" id="email-sub">Enter your email to discover your perfect cookie match!</label>
              <input type="email" 
              id="email" 
              placeholder="your email here"
              required> <br>
              <input type="submit" id="submit" value="Find my Cookie!" class="btn">
+             </div>
                 </form>
             </section><br>
 
