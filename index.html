@@ -22,13 +22,51 @@
             background-color: lavenderblush;
         }
 
-        #page-wrapper {
-            position: relative;
-            top:100px;
-        }
-
         #footer-li, #header-li {
             list-style: none;
+        }
+
+        header {
+            position: fixed;
+            top: 0px;
+            min-height: 75px;
+            z-index: 2;
+            display: flex;
+            width: 100%;
+            padding: 0px 20px;
+            justify-content: space-around;
+            align-items: center;
+            background-color:rgb(151, 87, 109);
+        }
+
+        #header-img {
+            float: left;
+        }
+
+        header a {
+            text-align: right;
+            color: white;
+            text-decoration: none;
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        header a:hover {
+            color:pink;
+        }
+
+        nav {
+            float: right;
+        }
+
+        nav ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-left: 30px;
         }
 
         .btn {
@@ -43,34 +81,8 @@
             font-family: 'Yanone Kaffeesatz', sans-serif;
         }
 
-        .header {
-            position: fixed;
-            top: 0px;
-            min-height: 75px;
-            z-index: 2;
-            display: flex;
-            width: 100%;
-            padding: 0px 20px;
-            justify-content: space-around;
-            align-items: center;
-            background-color:rgb(151, 87, 109);
-        }
-
-        .header a {
-            float:left;
-            text-align: right;
-            padding: 12px;
-            color: white;
-            line-height: 25px;
-            border-radius: 4px;
-        }
-
-        .header a:hover {
-            color:pink;
-        }
-
-        .header-right {
-            float: right;
+        h1 {
+            padding-top: 80px;
         }
 
         .container {
@@ -83,23 +95,46 @@
             margin: auto;
         }
 
+        #how-it-works {
+            display: block;
+            padding: 20px 50px;
+        }
+
+        #subsctiption-options {
+            display: flex;
+            height: 500px;
+            width: max-content;
+            flex-direction: row;
+        }
+
+        .cookie-club {
+            height: 50%;
+            width: 50%;
+        }
+
+
     </style>
 
     <title>Breez Cookiez</title>
 </head>
+<body>
     <div id="page-wrapper">
-            <div class="header">
-                <img src="logo.jpg" class="logo" alt="Breez Cookiez logo">
-                <div class="header-right">
-                    <a class="active" href="#how-it-works">How it Works</a>
-                    <a href="#subscription-options">Subscription Options</a>
-                </div>
-            </div>    
+            <header>
+                <img src="logo.jpg" alt="Breez Cookies logo" id="header-img">
+                <nav id="nav-bar">
+                <ul id="header-li">
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a> </li>
+                    <li><a href="#subscription-options" class="nav-link">Subscription Options</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                </ul>
+                </nav>
+            </header>  
+            
     
 
         <div class="container">
 
-            <h1>Fresh Baked to Your Doorstep!</h1> <br>
+            <h1 id=>Fresh Baked to Your Doorstep!</h1> <br>
 
             <section id="video">
              <iframe id="video"
@@ -174,8 +209,10 @@
             <section id="how-it-works">
               <h3><u>How it Works</u></h3>
               <p>Here at Breez Cookiez we know two things:
-                1. How to make good cookies
-                2. Everyone loves fresh cookies
+                <ol>
+                 <li> How to make good cookies</li>
+                 <li>Everyone loves fresh cookies</li>
+                </ol>
                 Our goal is to provide you with a wide selection of cookies baked fresh
                 and delivered to your door. We always bake your cookies the <em>same day they are delivered</em>. In
                 order to get you the freshest cookies, we ask that you book your delivery slot at least
@@ -190,8 +227,8 @@
                 </p>
             </section>
 
-            <section id="subscription-options">
-                <h3>Cookie Club Subscription Options</h3>
+            <h3>Cookie Club Subscription Options</h3>
+            <div id="subscription-options">
                 <div class="cookie-club" id="seasonal">
                     <div class="level">Seasonal Cookie Craver</div>
                     <h4>$120/$200 per year</h4>
@@ -222,7 +259,7 @@
                     </p>
                     <button class="btn">Select</button>
                 </div>
-            </section>  
+            </div>  
 
         </div>
 
@@ -236,6 +273,7 @@
             </footer>
     </div>
 
+</body>    
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
