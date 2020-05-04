@@ -44,7 +44,7 @@
             border-bottom: 3px solid #008080;
         }
 
-        #header-img {
+        header img {
             float: left;
         }
 
@@ -72,6 +72,14 @@
         nav li {
             display: inline-block;
             margin-left: 30px;
+        }
+
+        @media (max-width: 800px) 
+        {
+            nav li {
+                display: flex;
+                flex-wrap: wrap;
+            }
         }
 
         .btn {
@@ -124,7 +132,8 @@
         #how-it-works {
             display: block;
             padding: 20px 50px;
-            text-align: left;
+            text-align: center;
+
         }
 
         #cc-so {
@@ -184,7 +193,7 @@
 </head>
 <body>
     <div id="page-wrapper">
-            <header>
+            <header id="header">
                 <img src="logo.jpg" alt="Breez Cookies logo" id="header-img">
                 <nav id="nav-bar">
                 <ul id="header-li">
@@ -201,7 +210,7 @@
         <div class="container">
             <h1><em>Fresh Baked to Your Doorstep!</em></h1> <br>
 
-            <section id="video">
+            <section id="video1">
              <iframe id="video"
                     height="350px"
                     width="700px"
@@ -265,9 +274,13 @@
              <label for="email" id="email-sub">Enter your email to discover your perfect cookie match!</label>
              <input type="email" 
              id="email" 
+             name="email"
              placeholder="your email here"
              required> <br>
-             <input type="submit" id="submit" value="Find my Cookie!" class="btn">
+             <input type="submit" 
+                    id="submit" 
+                    value="Find my Cookie!" 
+                    class="btn">
              </div>
                 </form>
             </section><br>
@@ -329,7 +342,12 @@
 
             <div>
                 <h2 id="pricing">Pricing</h2>
-                 <p> lorem ipsum fuck fuck fuck</p>
+                 <p> 
+                     By the dozen 
+                     Specialty dozen
+                     Party tray 
+                     Specialty tray
+                 </p>
 
             </div>
 
