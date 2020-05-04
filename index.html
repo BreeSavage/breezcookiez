@@ -16,6 +16,10 @@
             box-sizing: border-box;
         }
 
+        #pagewrapper {
+            position: relative;
+        }
+
         body {
             font-size: 1.6rem;
             font-family: 'Montserrat', sans-serif;
@@ -37,6 +41,7 @@
             justify-content: space-around;
             align-items: center;
             background-color:rgb(151, 87, 109);
+            border-bottom: 3px solid #008080;
         }
 
         #header-img {
@@ -119,13 +124,17 @@
         #how-it-works {
             display: block;
             padding: 20px 50px;
+            text-align: left;
         }
 
-        #subsctiption-options {
-            margin-top: 60px;
+        #cc-so {
+            text-align: center;
+        }
+
+        #subscription-options {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
         }
 
         .cookie-club {
@@ -144,12 +153,28 @@
             list-style: none;
         }
 
+        footer {
+            bottom: 0px;
+            max-height: 30px;
+            display: flex;
+            width: 100%;
+            justify-content:flex-end;
+            align-items: center;
+            background-color:rgb(151, 87, 109);
+        }
+
         footer a {
             text-align: right;
-            color:black;
+            color: white;
             text-decoration: none;
             line-height: 25px;
             border-radius: 4px;
+        }
+
+        footer li {
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
 
@@ -170,10 +195,10 @@
                 </nav>
             </header>  
             
+            
     
 
         <div class="container">
-
             <h1><em>Fresh Baked to Your Doorstep!</em></h1> <br>
 
             <section id="video">
@@ -186,7 +211,7 @@
             </section> <br>
 
             <section id="cookie-quiz">
-             <h3 id="quiz-header"> Find Your Perfect Cookie Match!</h3>
+             <h2 id="quiz-header"> Find Your Perfect Cookie Match!</h2>
              <form id="form" action="https://www.freecodecamp.com/email-submit">
              <div class= "cookie-quiz">
                 <p><b>How do you feel about chocolate?</b></p>
@@ -248,7 +273,8 @@
             </section><br>
 
             <section id="how-it-works">
-              <h3><u>How it Works</u></h3>
+              <h2>How it Works</h2>
+              <br>
               <p>Here at Breez Cookiez we know two things:
                 <ol>
                  <li> How to make good cookies</li>
@@ -267,8 +293,9 @@
                 discounts. Take a look at our Cookie Club options to see which one is right for you!
                 </p>
             </section>
-
-            <h3>Cookie Club Subscription Options</h3>
+    
+            <h2 id="cc-so">Cookie Club Subscription Options</h2>
+            
             <section id="subscription-options">
                 <div class="cookie-club" id="seasonal">
                     <div class="level"><h3>Seasonal Cookie Craver</h3></div>
@@ -300,7 +327,11 @@
                 </div>
             </section>  
 
-        </div>
+            <div>
+                <h2 id="pricing">Pricing</h2>
+                 <p> lorem ipsum fuck fuck fuck</p>
+
+            </div>
 
             <footer>
                 <ul id="footer-li">
@@ -308,7 +339,6 @@
                     <li><a href="#">Terms</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-             <span>Copyright 2016, Original Trombones</span>
             </footer>
     </div>
 
